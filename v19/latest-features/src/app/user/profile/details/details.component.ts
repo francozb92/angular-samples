@@ -18,11 +18,7 @@ export class DetailsComponent {
     this._firstName = value;
   }
 
-  (signal('Morgan')).set('Jaime');
+  testSignal = signal('Morgan').set('Jaime');
   
-  (signal('Morgan')).update(name => name.toUpperCase());
-
-  const firstNameCapitalized = computed(() => signal('Morgan')().toUpperCase());
-  
-  console.log(firstNameCapitalized()); // MORGAN
+  test = (signal('Morgan')).update(name => name.toUpperCase());
 }
