@@ -60,6 +60,7 @@
     padding: 1rem;
     box-sizing: inherit;
     position: relative;
+    background-color: #ffffff;
   }
 
   .angular-logo {
@@ -72,6 +73,11 @@
     width: 100%;
     max-width: 700px;
     margin-bottom: 3rem;
+  }
+
+  .left-side {
+    margin-right: 100px;
+    margin-top: 10px;
   }
 
   .content h1 {

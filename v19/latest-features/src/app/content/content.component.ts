@@ -1,8 +1,10 @@
 import { Component } from '@angular/core';
+import { AreaComponent } from './area/area.component';
+import { SidebarComponent } from './sidebar/sidebar.component';
 
 @Component({
-  selector: 'app-content',
-  imports: [],
+  selector: 'content',
+  imports: [AreaComponent, SidebarComponent],
   templateUrl: './content.component.html',
   styleUrl: './content.component.scss'
 })

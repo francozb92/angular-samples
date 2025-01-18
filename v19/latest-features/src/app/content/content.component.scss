@@ -1,0 +1,12 @@
+.content-area {
+  width: calc(100% - 200px); /* initial width */
+  transition: width 0.3s ease-in-out;
+}
+
+.content-sidebar:checked ~ .content-area {
+  width: calc(100% - 50px); /* expanded width */
+}
+
+.content-sidebar:not(:checked) ~ .content-area {
+  width: calc(100% - 200px); /* shrunk width */
+}
