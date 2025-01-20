@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, output, Output } from '@angular/core';
+import { EventEmitter } from 'stream';
 
 @Component({
   selector: 'content-sidebar',
@@ -7,11 +8,15 @@ import { Component } from '@angular/core';
   styleUrl: './sidebar.component.scss'
 })
 export class SidebarComponent {
+  featureContentDispatched = output<any>();
+  
+  handleFeatureContentEvent(event: any){
+    //still deciding if hardcoding the content somewhere or making an api call to dispatch to content area
+    this.featureContentDispatched.emit(event.currentTarget.value);
+  }
 
-  isSidebarVisible: boolean = true;
-
-  toggleSidebar(): void {
-    this.isSidebarVisible = !this.isSidebarVisible;
+  exampleFunc(event: any){
+    this.handleFeatureContentEvent(event);
   }
 
 }

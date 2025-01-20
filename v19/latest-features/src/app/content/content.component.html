@@ -1,2 +1,2 @@
-<content-area class="content-area"></content-area>
-<content-sidebar class="content-sidebar"></content-sidebar>
+<content-area [displayFeatureNumberValue]="featureNumberValue" class="content-area"></content-area>
+<content-sidebar (featureContentDispatched)="handleFeatureNumberValue($event)" class="content-sidebar"></content-sidebar>

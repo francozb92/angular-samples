@@ -1,15 +1,15 @@
-<nav class="sidebar" [class.sidebar-hidden]="!isSidebarVisible">
+<nav class="sidebar">
   <div>  
   <ul>
-    <li><a routerLink="/featureOne">Feature 1</a></li>
-    <li><a routerLink="/featureTwo">Feature 2</a></li>
-    <li><a routerLink="/featureThree">Feature 3</a></li>
-    <li><a routerLink="/featureFour">Feature 4</a></li>
-    <li><a routerLink="/featureFive">Feature 5</a></li>
-    <li><a routerLink="/featureSix">Feature 6</a></li>
-    <li><a routerLink="/featureSeven">Feature 7</a></li>
-    <li><a routerLink="/featureEight">Feature 8</a></li>
-    <li><a routerLink="/featureNine">Feature 9</a></li>
+    <li value="1" (click)="exampleFunc($event)"><a (featureContentEvent)="handleFeatureContentEvent($event)">Feature 1</a></li>
+    <li value="2" (click)="exampleFunc($event)"><a (featureContentEvent)="handleFeatureContentEvent($event)">Feature 2</a></li>
+    <li value="3" (click)="exampleFunc($event)"><a (featureContentEvent)="handleFeatureContentEvent($event)">Feature 3</a></li>
+    <li value="4" (click)="exampleFunc($event)"><a (featureContentEvent)="handleFeatureContentEvent($event)">Feature 4</a></li>
+    <li value="5" (click)="exampleFunc($event)"><a (featureContentEvent)="handleFeatureContentEvent($event)">Feature 5</a></li>
+    <li value="6" (click)="exampleFunc($event)"><a (featureContentEvent)="handleFeatureContentEvent($event)">Feature 6</a></li>
+    <li value="7" (click)="exampleFunc($event)"><a (featureContentEvent)="handleFeatureContentEvent($event)">Feature 7</a></li>
+    <li value="8" (click)="exampleFunc($event)"><a (featureContentEvent)="handleFeatureContentEvent($event)">Feature 8</a></li>
+    <li value="9" (click)="exampleFunc($event)"><a (featureContentEvent)="handleFeatureContentEvent($event)">Feature 9</a></li>
   </ul>
   </div>
 </nav>
