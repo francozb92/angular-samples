@@ -1,33 +1,6 @@
 .footer {
   background-color: #333;
   color: #fff;
-  padding: 20px;
   text-align: center;
-}
-
-.container {
-  max-width: 1200px;
-  max-height: 40px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
-ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-li {
-  display: inline-block;
-  margin-right: 20px;
-}
-
-a {
-  color: #fff;
-  text-decoration: none;
-}
-
-a:hover {
-  color: #ccc;
+  min-height: 100px;
 }

@@ -1,12 +1,22 @@
+content-sidebar {
+  background-color: #333;
+}
+
 .content-area {
-  width: calc(100% - 200px); /* initial width */
-  transition: width 0.3s ease-in-out;
+  background-color: #f7f7f7;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.content-sidebar:checked ~ .content-area {
-  width: calc(100% - 50px); /* expanded width */
+.content-area h1 {
+  font-size: 24px;
+  margin-top: 0;
 }
 
-.content-sidebar:not(:checked) ~ .content-area {
-  width: calc(100% - 200px); /* shrunk width */
+.content-area p {
+  font-size: 18px;
+  margin-bottom: 20px;
 }
+
+
+
