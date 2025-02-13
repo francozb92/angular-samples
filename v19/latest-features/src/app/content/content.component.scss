@@ -1,19 +1,36 @@
 content-sidebar {
-  background-color: #333;
+  background-color: #130a33;
+  color: #B5860D;
+  border-style: solid;
+  border-width: 2.5px;
+  border-radius: 10px;
+  height: auto;
 }
 
-.content-area {
-  background-color: #f7f7f7;
-  border: 1px solid #ddd;
+content-area {
+  background-color: #130a33;
+  color: white;
+  padding: 10px;
+  border: 5px solid #B5860D;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  border-style: solid;
+  border-width: 2.5px;
+  border-radius: 10px;
 }
 
-.content-area h1 {
+content-sidebar.li:last-child {
+  height: auto;
+}
+
+h1 {
+
   font-size: 24px;
   margin-top: 0;
 }
 
-.content-area p {
+p {
+  padding: 50px;
   font-size: 18px;
   margin-bottom: 20px;
 }

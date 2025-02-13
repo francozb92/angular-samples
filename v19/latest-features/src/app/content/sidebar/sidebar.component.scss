@@ -1,27 +1,46 @@
 .sidebar {
   position: fixed;
   left: 0;
-  background-color: #333;
-  color: #fff;
-  width: 150px;
+  background-color: #0e062b;
+  text-align: center;
+  width: 146px;
+  border-radius: 10px;
+  color: #B5860D;
+  border-style: solid;
+  border-top-width: 1.25px;
+  border-right-width: 1.25px;
+  border-bottom-width: 1.25px;
+  min-height: inherit;
 }
 
-.sidebar-hidden {
-  width: 0;
+i {
+  color: white;
 }
-
 .sidebar ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
+.sidebar li:nth-child(1) {
+  padding-top: 20px;
+}
+
+.sidebar li:last-child {
+  
+  border: none;
+
+}
+
 .sidebar li {
+  padding-bottom: 20px;
   margin-bottom: 20px;
   cursor: pointer;
   text-align: center;
-  
+  border-bottom: dashed 0.25px goldenrod;
 }
+
+
 
 .sidebar a {
   color: #fff;
@@ -29,5 +48,11 @@
 }
 
 .sidebar a:hover {
-  color: #ccc;
+  color: lightgoldenrodyellow;
+  transform: scale(1.5);
 }
+
+.sidebar li:hover {
+  transform: scale(1.05);
+}
+
