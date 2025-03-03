@@ -12,7 +12,8 @@ export class SidebarComponent {
   
   handleFeatureContentEvent(event: any){
     //still deciding if hardcoding the content somewhere or making an api call to dispatch to content area
-    this.featureContentDispatched.emit(event.currentTarget.value);
+    debugger;
+    this.featureContentDispatched.emit(event.currentTarget.id);
   }
 
   exampleFunc(event: any){

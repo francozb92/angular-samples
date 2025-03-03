@@ -1,29 +1,46 @@
 .sidebar {
   position: fixed;
-  top: 0;
   left: 0;
-  width: 100px;
-  height: 100vh;
-  background-color: #333;
-  color: #fff;
-  padding: 20px;
-  margin-top: 60px;
-  transition: width 0.3s ease-in-out;
+  background-color: #0e062b;
+  text-align: center;
+  width: 146px;
+  border-radius: 10px;
+  color: #B5860D;
+  border-style: solid;
+  border-top-width: 1.25px;
+  border-right-width: 1.25px;
+  border-bottom-width: 1.25px;
+  min-height: inherit;
 }
 
-.sidebar-hidden {
-  width: 0;
+i {
+  color: white;
 }
-
 .sidebar ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-.sidebar li {
-  margin-bottom: 20px;
+.sidebar li:nth-child(1) {
+  padding-top: 20px;
 }
+
+.sidebar li:last-child {
+  
+  border: none;
+
+}
+
+.sidebar li {
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  text-align: center;
+  border-bottom: dashed 0.25px goldenrod;
+}
+
+
 
 .sidebar a {
   color: #fff;
@@ -31,25 +48,11 @@
 }
 
 .sidebar a:hover {
-  color: #ccc;
+  color: lightgoldenrodyellow;
+  transform: scale(1.5);
 }
 
-.sidebar-toggle {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  font-size: 24px;
-  cursor: pointer;
+.sidebar li:hover {
+  transform: scale(1.05);
 }
 
-.sidebar-toggle i {
-  transition: transform 0.3s ease-in-out;
-}
-
-.sidebar-toggle i.fa-angle-left {
-  transform: rotate(0deg);
-}
-
-.sidebar-toggle i.fa-angle-right {
-  transform: rotate(90deg);
-}
