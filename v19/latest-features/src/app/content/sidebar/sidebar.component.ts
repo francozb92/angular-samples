@@ -1,5 +1,4 @@
 import { Component, output, Output } from '@angular/core';
-import { EventEmitter } from 'stream';
 
 @Component({
   selector: 'content-sidebar',

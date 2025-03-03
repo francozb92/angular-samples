@@ -7,6 +7,6 @@ import { Component, Input } from '@angular/core';
   styleUrl: './feature.component.scss'
 })
 export class FeatureComponent {
-  @Input() featureContent: IFeatureContent | undefined; 
+  //@Input() featureContent: IFeatureContent | undefined; 
 
 }
